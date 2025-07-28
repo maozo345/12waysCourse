@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>12 הדרכים שהיקום מתקשר איתך - אתגר תודעתי</title>
+    <meta
+      name="description"
+      content="אתגר ייחודי לגילוי התקשור האישי שלך, עם 12 דרכים שהיקום מדבר אליך. הצטרפו עכשיו עם השקעה סמלית."
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Rubik", Arial, sans-serif;
+        background: linear-gradient(
+            135deg,
+            rgba(94, 63, 168, 0.6),
+            rgba(47, 128, 237, 0.6)
+          ),
+          url("https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80")
+            no-repeat center center fixed;
+        background-size: cover;
+        color: #f0f0f8;
+        direction: rtl;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 1rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      main {
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 18px;
+        max-width: 600px;
+        margin: auto;
+        padding: 3rem 3rem 4rem 3rem;
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+        transition: box-shadow 0.3s ease;
+      }
+      main:hover {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.35);
+      }
+      h1 {
+        font-size: 3.4rem;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+        color: #b998e8;
+        text-shadow: 1.5px 1.5px 6px rgba(0, 0, 0, 0.5);
+      }
+      h2 {
+        font-size: 1.45rem;
+        color: #d45ab8;
+        margin-bottom: 1.8rem;
+      }
+      p.lead {
+        font-size: 1.35rem;
+        max-width: 520px;
+        margin: 1rem auto 3rem;
+        color: #d7d9f0;
+        line-height: 1.7;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      p.highlight-auto {
+        color: #b4a8ff;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 2.2rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.015em;
+        text-shadow: 0 0 4px #8468ff;
+      }
+
+      div {
+        gap: 20px;
+      }
+      /* כפתורים */
+      .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        max-width: 100%;
+        align-items: center;
+        margin-top: auto;
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+        padding: 1.15rem 1.6rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        border-radius: 14px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.35s ease, box-shadow 0.35s ease;
+        text-decoration: none;
+        color: white;
+        user-select: none;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        min-width: 260px;
+        text-align: center;
+        letter-spacing: 0.04em;
+      }
+      .btn-pay {
+        background: linear-gradient(90deg, #7e42c7, #5036b8);
+        box-shadow: 0 7px 25px #7b4ec8;
+      }
+      .btn-pay:hover {
+        background: linear-gradient(90deg, #5a2ca5, #362a86);
+        box-shadow: 0 9px 30px #572e96;
+      }
+      .btn-bit {
+        background: linear-gradient(90deg, #2f80ed, #5a6ddd);
+        box-shadow: 0 7px 25px #2b66d6;
+      }
+      .btn-bit:hover {
+        background: linear-gradient(90deg, #225ab7, #414db1);
+        box-shadow: 0 9px 30px #1f479d;
+      }
+      .btn-whatsapp {
+        background: #25d366;
+        box-shadow: 0 7px 25px #20b358;
+        color: white;
+      }
+      .btn-whatsapp:hover {
+        background: #1ebe56;
+        box-shadow: 0 9px 30px #199847;
+      }
+      .btn-whatsapp svg {
+        width: 24px;
+        height: 24px;
+        fill: white;
+        flex-shrink: 0;
+      }
+
+      /* טקסטים קטנים מתחת */
+      small {
+        display: block;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        color: #a8a8c7;
+        letter-spacing: 0.02em;
+      }
+
+      /* סקשן תועלות */
+      section.benefits {
+        margin: 3rem auto 3rem auto;
+        max-width: 540px;
+        color: #d1caff;
+        color: #cafff7;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.3); /* פחות שקוף */
+        padding: 2rem 2rem 2rem 2rem;
+        box-shadow: 0 0 18px rgba(183, 159, 255, 0.6);
+        user-select: none;
+      }
+      section.benefits h3 {
+        font-size: 2rem;
+        color: #c1b1f8;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 0 0 10px #937fff;
+      }
+      section.benefits ul {
+        list-style: none;
+        padding-right: 1rem;
+        font-size: 1.15rem;
+        line-height: 1.6;
+      }
+      section.benefits ul li {
+        margin-bottom: 1rem;
+        padding-right: 0.8rem;
+        position: relative;
+      }
+      section.benefits ul li::before {
+        content: "✔";
+        color: #a58aff;
+        font-weight: 700;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 1.3rem;
+        line-height: 1;
+        user-select: none;
+      }
+
+      /* סקשן דרכים */
+      section.ways {
+        margin: 3rem auto;
+        max-width: 540px;
+        color: #cafff7;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        box-shadow: 0 0 18px rgba(183, 159, 255, 0.6);
+      }
+      section.ways h3 {
+        font-size: 2rem;
+        color: #c1b1f8;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 0 0 10px #937fff;
+      }
+      section.ways ul {
+        list-style: none;
+        font-size: 1.15rem;
+        line-height: 1.6;
+      }
+      section.ways ul li {
+        margin-bottom: 1.5rem;
+        padding-right: 2rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      section.ways ul li::before {
+        content: attr(data-emoji);
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+        position: absolute;
+        right: 0;
+      }
+      section.ways ul li.bonus::before {
+        content: none;
+      }
+      section.ways ul li.bonus {
+        font-weight: 600;
+        color: #b4a8ff;
+      }
+
+      /* גלריית תמונות אנכית */
+
+      /* רספונסיביות */
+      @media (max-width: 650px) {
+        main {
+          padding: 2.2rem 2rem 3rem 2rem;
+          max-width: 90vw;
+        }
+        h1 {
+          font-size: 2.8rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        p.lead {
+          font-size: 1.1rem;
+          margin-bottom: 2.2rem;
+          max-width: 100%;
+          padding: 0 0.4rem;
+        }
+        .btn {
+          font-size: 1.1rem;
+          min-width: 210px;
+          padding: 0.9rem 1.3rem;
+        }
+        .btn-group {
+          gap: 1rem;
+        }
+        section.benefits ul {
+          font-size: 1rem;
+        }
+        section.ways ul {
+          font-size: 1rem;
+        }
+        section.gallery img {
+          max-width: 80vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main role="main" aria-labelledby="main-title">
+      <h1 id="main-title">12 הדרכים שהיקום מתקשר איתך</h1>
+      <h2>קורס ללימוד תיקשור | השקעה סמלית: 97 ש״ח</h2>
+
+      <p class="lead">
+        קרה לך פעם שחשבת על מישהו והוא התקשר? <br />
+        שהסתכלת על השעון וראית שוב 11:11?<br />
+        עכשיו יש לך הזדמנות להצטרף לאתגר
+        <strong>12 הדרכים שהיקום מתקשר איתך</strong>, שיעזור לך להבין את התיקשור
+        היקום מדבר איתך באופן עצמאי.
+      </p>
+
+      <!-- סקשן תועלות -->
+      <section class="benefits" aria-labelledby="benefits-title">
+        <h3 id="benefits-title">מטרות האתגר</h3>
+        <ul>
+          <li>לזהות סימנים ייחודיים שהיקום שולח רק לך</li>
+          <li>לפתח תקשורת פנימית עם האנרגיות שמקיפות אותך</li>
+          <li>לקבל כלים פשוטים להבנת המסרים התת-מודעים</li>
+          <li>להתחבר לעוצמה הפנימית שלך ולגלות יותר מעצמך</li>
+          <li>לחוות חוויות רוחניות מעשירות שמרחיבות תודעה</li>
+        </ul>
+      </section>
+
+      <!-- סקשן דרכים -->
+      <section class="ways" aria-labelledby="ways-title">
+        <h3 id="ways-title">12 הדרכים שהיקום מתקשר איתך</h3>
+        <ul>
+          <li data-emoji="🌙">חלומות</li>
+          <li data-emoji="🎶">צלילים ומוזיקה</li>
+          <li data-emoji="🌸">ריחות וטעמים</li>
+          <li data-emoji="🌈">צעקות וצבעים</li>
+          <li data-emoji="⏳">סינכרונים</li>
+          <li data-emoji="✨">סימנים שמימיים</li>
+          <li data-emoji="🤝">מפגשים מפתיעים</li>
+          <li data-emoji="🔢">מספרים</li>
+          <li data-emoji="🦋">חיות טוטם</li>
+          <li data-emoji="💡">אינטואיציה</li>
+          <li data-emoji="🪶">חפצים</li>
+          <li data-emoji="🫀">גוף האדם</li>
+          <li class="bonus">בונוס: מדריכים רוחניים</li>
+        </ul>
+      </section>
+
+      <!-- גלריית תמונות  -->
+      <section class="gallery" aria-label="גלריית תמונות מהאתגר">
+        <img
+          src="lib/אביב אפרת הבית הרוחני 12 הדרכים שהיקום מתקשר איתך ביקורת 2.jpg"
+          alt="אביב אפרת הבית הרוחני"
+          tabindex="0"
+        />
+        <img
+          src="lib/אביב אפרת הבית הרוחני 12 הדרכים שהיקום מתקשר איתך ביקורת 3.jpg"
+          alt="אביב אפרת הבית הרוחני"
+          tabindex="0"
+        />
+        <img
+          src="lib/אביב אפרת הבית הרוחני 12 הדרכים שהיקום מתקשר איתך ביקורת 4.jpg"
+          alt="אביב אפרת הבית הרוחני"
+          tabindex="0"
+        />
+      </section>
+
+      <div class="btn-group" role="group" aria-label="אפשרויות הרשמה">
+        <a
+          href="https://app.upay.co.il/API6/s.php?m=eVJhR3FRWktDTm1WQ0k3ZUovSU5jdz09"
+          class="btn btn-pay"
+          role="button"
+          aria-label="תשלום באשראי"
+        >
+          💜 תשלום באשראי
+        </a>
+        <a
+          href="https://link.payboxapp.com/RLxPT48o89Gr14Un9"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-bit"
+          role="button"
+          aria-label="💙 תשלום בPAYBOX"
+        >
+          💙 תשלום בPAYBOX
+        </a>
+        <a
+          href="https://wa.me/972536260735"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-whatsapp"
+          role="button"
+          aria-label="התייעץ איתי בוואטסאפ"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M20.52 3.48A11.81 11.81 0 0012 0C5.37 0 .04 5.31.04 11.87c0 2.1.55 4.15 1.6 5.94L0 24l6.5-1.69a11.9 11.9 0 005.5 1.38c6.64 0 11.97-5.31 11.97-11.87a11.7 11.7 0 00-3.45-8.24zM12 21.71a9.8 9.8 0 01-5.02-1.4l-.36-.22-3.86 1 1.03-3.87-.23-.37A9.75 9.75 0 012.18 12C2.18 6.85 6.71 2.39 12 2.39a9.66 9.66 0 016.8 2.81 9.51 9.51 0 012.76 6.8c0 5.15-4.5 9.71-9.56 9.71zm5.1-7.24c-.28-.14-1.63-.8-1.88-.89s-.44-.14-.63.14-.72.89-.88 1.07-.33.21-.62.07a6.92 6.92 0 01-2-1.23c-.37-.36-.7-.8-1.24-1.11a.78.78 0 01-.15-1.11c.13-.15.29-.37.44-.56a1.32 1.32 0 00.2-.38c.07-.21 0-.39-.1-.54s-.63-1.52-.87-2.08a.5.5 0 00-.82-.21c-.28.21-1.2 1.18-1.2 2.86s1.23 3.31 1.4 3.54a8.37 8.37 0 003.82 3.49c.53.23.94.18 1.29.11a2.1 2.1 0 001.6-1.21 2.49 2.49 0 00.18-1.17c-.02-.2-.24-.31-.52-.45z"
+            />
+          </svg>
+          התיעצות בוואטסאפ
+        </a>
+      </div>
+
+      <section class="gallery" aria-label="גלריית תמונות מהאתגר">
+        <img
+          src="lib/אביב אפרת הבית הרוחני 12 הדרכים שהיקום מתקשר איתך ביקורת 7.jpg"
+          alt="אביב אפרת הבית הרוחני"
+          tabindex="0"
+        />
+        <img
+          src="lib/אביב אפרת הבית הרוחני 12 הדרכים שהיקום מתקשר איתך ביקורת 8.jpg"
+          alt="אביב אפרת הבית הרוחני"
+          tabindex="0"
+        />
+        <img
+          src="lib/אביב אפרת הבית הרוחני 12 הדרכים שהיקום מתקשר איתך ביקורת 9.jpg"
+          alt="אביב אפרת הבית הרוחני"
+          tabindex="0"
+        />
+      </section>
+
+      <small>📲 מומלץ לפתוח את הדף במובייל כדי לחוות את החוויה במלואה</small>
+    </main>
+  </body>
+</html>
